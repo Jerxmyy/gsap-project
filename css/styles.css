@@ -1,0 +1,57 @@
+body {
+    background-image: url("../img/espace-fond.jpg");
+    width: 100vw;
+    height: 600vh;
+}
+
+#text {
+    display: flex;
+    color: white;
+    justify-content: center;
+    background-color: black;
+}
+
+#sun {
+    width: 200px;
+}
+
+#mercure {
+    width: 20px;
+}
+
+#venus {
+    width: 60px;
+}
+
+#earth {
+    width: 50px;
+}
+
+#mars {
+    width: 40px;
+}
+
+#jupiter {
+    width: 100px;
+}
+
+#saturn {
+    width: 100px;
+    height: auto;
+}
+
+#uranus {
+    width: 70px;
+}
+
+#neptune {
+    width: 70px;
+}
+
+#planete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30vh;
+    gap: 30px;
+}
