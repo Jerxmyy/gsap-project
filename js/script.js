@@ -12,7 +12,6 @@ gsap.to("#mercury", {
     ease: "none",
 });
 
-
 // animation Venus
 gsap.to("#venus", {
     duration: 3,
@@ -62,7 +61,6 @@ gsap.to("#jupiter", {
     motionPath: {
         path: "#motionPath-jupiter path",
         align: "#motionPath-jupiter path",
-        autoRotate: true,
         alignOrigin: [0.5, 0.5],
     },
     ease: "none",

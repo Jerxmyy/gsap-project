@@ -63,7 +63,6 @@ masque des chemins pour animation Motion Path */
 
 #motionPath-mercury {
     visibility: hidden;
-
     position: absolute;
     top: 38%;
     left: -5%;
@@ -71,7 +70,6 @@ masque des chemins pour animation Motion Path */
 
 #motionPath-venus {
     visibility: hidden;
-
     position: absolute;
     top: 35%;
     left: -15%;
@@ -79,48 +77,44 @@ masque des chemins pour animation Motion Path */
 
 #motionPath-earth {
     visibility: hidden;
-
     position: absolute;
-    left: -8%;
     top: 30%;
+    left: -8%;
 }
 
 #motionPath-mars {
     visibility: hidden;
-
     position: absolute;
-    left: -4%;
     top: 30%;
+    left: -4%;
 }
 
 #motionPath-jupiter {
     visibility: hidden;
-
     position: absolute;
-    left: -4%;
     top: 30%;
+    left: -4%;
 }
 
 #motionPath-saturn {
     visibility: hidden;
-
     position: absolute;
-    left: -3%;
     top: 30%;
+    left: -3%;
 }
 
 #motionPath-uranus {
     visibility: hidden;
     position: absolute;
-    left: -10%;
     top: 20%;
+    left: -10%;
 }
 
 #motionPath-neptune {
     visibility: hidden;
     position: absolute;
-    left: -10%;
     top: 20%;
+    left: -10%;
 }
 
 
