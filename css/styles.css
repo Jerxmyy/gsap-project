@@ -1,9 +1,10 @@
 body {
     background-image: url("../img/espace-fond.jpg");
     width: 100vw;
-    height: 600vh;
+    height: 250vh;
 }
 
+/* mise en forme texte */
 #text {
     display: flex;
     color: white;
@@ -11,11 +12,14 @@ body {
     background-color: black;
 }
 
+/* redimension des images
+gestion des flex / absolute 
+masque des chemins pour animation Motion Path */
 #sun {
     width: 200px;
 }
 
-#mercure {
+#mercury {
     width: 20px;
 }
 
@@ -42,16 +46,105 @@ body {
 
 #uranus {
     width: 70px;
+    padding-left: 20px;
 }
 
 #neptune {
     width: 70px;
 }
 
-#planete {
+#planet {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 30vh;
     gap: 30px;
+}
+
+#motionPath-mercury {
+    visibility: hidden;
+
+    position: absolute;
+    top: 38%;
+    left: -5%;
+}
+
+#motionPath-venus {
+    visibility: hidden;
+
+    position: absolute;
+    top: 35%;
+    left: -15%;
+}
+
+#motionPath-earth {
+    visibility: hidden;
+
+    position: absolute;
+    left: -8%;
+    top: 30%;
+}
+
+#motionPath-mars {
+    visibility: hidden;
+
+    position: absolute;
+    left: -4%;
+    top: 30%;
+}
+
+#motionPath-jupiter {
+    visibility: hidden;
+
+    position: absolute;
+    left: -4%;
+    top: 30%;
+}
+
+#motionPath-saturn {
+    visibility: hidden;
+
+    position: absolute;
+    left: -3%;
+    top: 30%;
+}
+
+#motionPath-uranus {
+    visibility: hidden;
+    position: absolute;
+    left: -10%;
+    top: 20%;
+}
+
+#motionPath-neptune {
+    visibility: hidden;
+    position: absolute;
+    left: -10%;
+    top: 20%;
+}
+
+
+#meteors-left {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    right: -5%;
+}
+
+#astronaut {
+    width: 400px;
+    position: absolute;
+    z-index: 1;
+    bottom: -200%;
+    left: -5%;
+}
+
+#message-fin {
+    color: white;
+    position: absolute;
+    top: -200%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
 }
