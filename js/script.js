@@ -1,5 +1,6 @@
 // animation Mercure
 gsap.to("#mercury", {
+    repeat: -1,
     duration: 2,
     motionPath: {
         path: "#motionPath-mercury path",
@@ -7,7 +8,6 @@ gsap.to("#mercury", {
         autoRotate: true,
         alignOrigin: [0.5, 0.5],
         rotate: -90,
-        repeat: -1,
     },
     ease: "none",
 });
@@ -16,6 +16,7 @@ gsap.to("#mercury", {
 // animation Venus
 gsap.to("#venus", {
     duration: 3,
+    repeat: -1,
     motionPath: {
         path: "#motionPath-venus path",
         align: "#motionPath-venus path",
@@ -29,6 +30,7 @@ gsap.to("#venus", {
 // animation Terre
 gsap.to("#earth", {
     duration: 4,
+    repeat: -1,
     motionPath: {
         path: "#motionPath-earth path",
         align: "#motionPath-earth path",
@@ -42,6 +44,7 @@ gsap.to("#earth", {
 // animation Mars
 gsap.to("#mars", {
     duration: 5,
+    repeat: -1,
     motionPath: {
         path: "#motionPath-mars path",
         align: "#motionPath-mars path",
@@ -55,6 +58,7 @@ gsap.to("#mars", {
 // animation Jupiter
 gsap.to("#jupiter", {
     duration: 7,
+    repeat: -1,
     motionPath: {
         path: "#motionPath-jupiter path",
         align: "#motionPath-jupiter path",
@@ -67,6 +71,7 @@ gsap.to("#jupiter", {
 // animation Saturne
 gsap.to("#saturn", {
     duration: 8,
+    repeat: -1,
     motionPath: {
         path: "#motionPath-saturn path",
         align: "#motionPath-saturn path",
@@ -79,6 +84,7 @@ gsap.to("#saturn", {
 // animation Uranus
 gsap.to("#uranus", {
     duration: 10,
+    repeat: -1,
     motionPath: {
         path: "#motionPath-uranus path",
         align: "#motionPath-uranus path",
@@ -91,6 +97,7 @@ gsap.to("#uranus", {
 // animation Neptune
 gsap.to("#neptune", {
     duration: 12,
+    repeat: -1,
     motionPath: {
         path: "#motionPath-neptune path",
         align: "#motionPath-neptune path",
@@ -100,3 +107,20 @@ gsap.to("#neptune", {
     ease: "none",
 });
 
+
+const timeline = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#meteors",
+        start: "top 10%",
+        end: "bottom 0%",
+        pin: true
+    }
+});
+timeline.to(".message-fin h1", {
+    scale: 2,
+    duration: 4,
+});
+timeline.to(".message-fin h1", {
+    opacity: 0,
+    duration: 4,
+});
